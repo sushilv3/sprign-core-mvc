@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Spring MVC Products</title>
+</head>
+<body>
+	
+	<div>
+	<h2>Add Product</h2>
+	
+	<form th:action="@{/product}" method="post" th:object="${product}">
+	
+	<input type="hidden" th:field="*{id}" />
+	
+	<input type="text" th:field="*{description}" placeholder=" Enter Product Description "/>
+	
+	<input type="text" th:field="*{price}" placeholder=" Enter Product Price "/>
+	
+	<input type="text" th:field="*{imageUrl}" placeholder=" Enter Product Image  "/>
+	
+	<button type="submit">Submit</button>
+	</form>
+	
+	
+	</div> 
+	
+</body>
+</html>
