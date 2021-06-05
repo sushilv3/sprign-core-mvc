@@ -10,11 +10,15 @@ import java.util.Map;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.spring.guru.domain.Product;
 
+
+//this service interact with jpa using repository basis
 @Service
+@Profile("map")
 public class ProductServiceImpl implements ProductService {
 
 	private Map<Integer, Product> products;
