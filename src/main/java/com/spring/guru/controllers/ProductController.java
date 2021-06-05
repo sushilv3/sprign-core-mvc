@@ -46,6 +46,7 @@ public class ProductController {
 	@RequestMapping(value="/product",method = RequestMethod.POST)
 	public String saveOrUpdateProduct(Product product) {
 		Product savedproduct = productService.saveOrUpdateProduct(product);
+		System.out.println("$$$$$ product added successfully ");
 		return "redirect:/product/"+savedproduct.getId();
 		
 	}
