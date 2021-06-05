@@ -12,6 +12,8 @@
 	<form th:action="@{/product}" method="post" th:object="${product}">
 	
 	<input type="hidden" th:field="*{id}" />
+	<input type="hidden" th:field="*{version}" />
+	
 	
 	<input type="text" th:field="*{description}" placeholder=" Enter Product Description "/>
 	
