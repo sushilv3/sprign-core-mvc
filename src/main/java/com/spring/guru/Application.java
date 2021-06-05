@@ -23,6 +23,20 @@ public class Application {
 //		GreetingController gc = (GreetingController)ctx.getBean("greetingController");
 //		
 //		gc.sayHello();
+		
+		
+		//show all beans managened by spring 
+//		System.out.println("************ Beans *******************");
+//		System.out.println(ctx.getBeanDefinitionCount());
+//		System.out.println(ctx.getBeanDefinitionNames());
+		
+//		String[] beanNames = ctx.getBeanDefinitionNames();
+//		for(String name: beanNames) {
+//			System.out.println(name);
+//		}
+//		for(String name:ctx.getBeanDefinitionNames()) {
+//			System.out.println(name);
+//		}
 	}
 
 }
